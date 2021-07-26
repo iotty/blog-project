@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Blog Project",
+    // siteUrl: "https://www.yourdomain.tld",
+    title: "iotty personal notes",
+    description: "Personal of iotty journey",
+    twitter: "@iotti0",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 };

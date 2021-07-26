@@ -1,9 +1,10 @@
 import * as React from "react"
+import Seo from '../components/seo'
 
 
 const IndexPage = () => {
   return (
-    <div>This is homepage.</div>
+    <Seo title='Homepage' />
   )
 }
 

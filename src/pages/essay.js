@@ -1,8 +1,9 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 
 const EssayPage = () => {
     return (
-        <div>This is Essay pages.</div>
+        <Seo title='Essay' />
     )
 }
 
