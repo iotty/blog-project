@@ -1,2 +1,2 @@
 import './src/styles/global.css'
-import '@fontsource/inter'
+import '@fontsource/inter/variable.css'
