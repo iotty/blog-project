@@ -1,6 +1,7 @@
 import * as React from "react"
 import Seo from '../components/seo'
 import Nav from '../components/nav'
+import HeroHome from '../components/heroHome'
 
 
 
@@ -8,9 +9,12 @@ const IndexPage = () => {
   return (
     <div className='p-2 bg-white'>
     <Seo title='Homepage' />
-      <Nav></Nav>
- 
-      <h1>This will be heading.</h1>
+      <Nav/>
+      <HeroHome
+      name='Rihot Gusron'
+      description='A passionate millenial who love to hear your story about logistics, design, and photography.'
+      slug='Logistician, designer, some coding. Currently Lab Assistant at Logistics Departement'
+      />
     
     </div>
   )
