@@ -13,7 +13,7 @@ const IndexPage = () => {
       <HeroHome
       name='Rihot Gusron'
       description='A passionate millenial who love to hear your story about logistics, design, and photography.'
-      slug='Logistician, designer, some coding. Currently Lab Assistant at Logistics Departement'
+      slug='Logistician, dreamer, designer, some coding. Currently Lab Assistant at Logistics Departement.'
       />
     
     </div>

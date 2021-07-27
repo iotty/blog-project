@@ -8,7 +8,7 @@ const NavBar = () => {
             <nav className='px-4 md:px-16 py-4 max-w-screen-xl mx-auto sm:flex sm:justify-between'>
                 <div className='flex items-center justify-between'>
                     <div>
-                        <img className='w-8 h-8' src={Logo} alt='Logo'></img>
+                        <Link to='/'><img className='w-8 h-8' src={Logo} alt='Logo'></img></Link>
                     </div>
                     <div className='sm:hidden'>
                         <button type='button'>
@@ -22,6 +22,7 @@ const NavBar = () => {
                     <Link className='sm:ml-6' to='/essay'>Essay</Link>
                     <Link className='sm:ml-6' to='/illustration'>Illustration</Link>
                     <Link className='sm:ml-6' to='/book'>Book</Link>
+                    <Link className='sm:ml-6' to='/'>About</Link>
                 </div>
             </nav>
         </header>
