@@ -14,5 +14,6 @@ module.exports = {
         name: `essay`,
       },
     },
-    `gatsby-plugin-mdx`,],
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-postcss`,],
 };
