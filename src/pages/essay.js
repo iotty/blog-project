@@ -2,7 +2,8 @@ import * as React from 'react'
 import Seo from '../components/seo'
 import Nav from '../components/nav'
 import { graphql } from 'gatsby'
-import EssayList from '../components/essaylist'
+import EssayCard from '../components/essaycard'
+import PageTitleComponent from '../components/pageTitle'
 
 const EssayPage = ({data}) => {
     const essays = data.allMdx.nodes
@@ -10,7 +11,8 @@ const EssayPage = ({data}) => {
         <div className='p-2 bg-white'>
             <Seo title='Essay' />
             <Nav/>
-            <EssayList/>
+            <PageTitleComponent/>
+            <EssayCard/>
         {essays.map((post) => {
             return (
             <div>
