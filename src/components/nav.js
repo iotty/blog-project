@@ -19,7 +19,7 @@ const NavBar = () => {
                         <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                         </svg>
                         </Popover.Button>
-                        <Popover.Panel className="absolute bg-white -right-full -top-full">
+                        <Popover.Panel className="absolute z-10 bg-white -right-full -top-full">
                           <div className="w-screen h-screen flex flex-col justify-center items-center">
                             <Link className='text-2xl text-gray-400 font-bold ' to='/essay'>Essay</Link>
                             <Link className='text-2xl text-gray-400 font-bold mt-4' to='/illustration'>Illustration</Link>
