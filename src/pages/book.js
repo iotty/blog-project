@@ -7,7 +7,7 @@ import PageContainer from '../components/pageContainer'
 
 const IllustrationPage = () => {
     return (
-       <div className='p-2 bg-white'>
+       <div>
         <Seo title='Book' />
         <PageContainer>
         <Nav/>
