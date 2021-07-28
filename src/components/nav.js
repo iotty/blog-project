@@ -6,7 +6,7 @@ import Logo from '../images/icon.png'
 const NavBar = () => {
     return (
         <header>
-            <nav className='px-4 md:px-16 py-4 max-w-screen-xl mx-auto sm:flex sm:justify-between'>
+            <nav className='mt-12 sm:flex sm:justify-between'>
                 <div className='flex items-center justify-between'>
                     <div>
                         <Link to='/'><img className='w-8 h-8' src={Logo} alt='Logo'></img></Link>

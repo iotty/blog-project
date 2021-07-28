@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const FooterSection = () => {
     return (
-        <footer className='p-4 md:px-16 py-4 max-w-screen-xl mx-auto'>
+        <footer className='mt-16 py-4'>
             <div className='flex justify-between'>
                 <div>
                     <p className='text-lg text-gray-700'>Rihot Gusron &copy; 2021</p>
