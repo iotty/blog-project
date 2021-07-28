@@ -11,7 +11,10 @@ const EssayPage = ({data}) => {
         <div className='p-2 bg-white'>
             <Seo title='Essay' />
             <Nav/>
-            <PageTitleComponent/>
+            <PageTitleComponent
+            titlePage='Essay'
+            description='Add some description that will wrap for test purpose.'
+            />
             <EssayCard/>
         {essays.map((post) => {
             return (

@@ -6,10 +6,10 @@ import PageTitleComponent from '../components/pageTitle'
 const IllustrationPage = () => {
     return (
        <div className='p-2 bg-white'>
-        <Seo title='Illustration' />
+        <Seo title='Book' />
         <Nav/>
         <PageTitleComponent
-            titlePage='Illustration'
+            titlePage='Book'
             description='Add some description that will wrap for test purpose.'
             />
         </div>
