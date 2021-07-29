@@ -3,6 +3,10 @@ import {graphql} from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import BlogTitle from '../components/blogTitle'
 import Seo from '../components/seo'
+import PageContainer from '../components/pageContainer'
+import Nav from '../components/nav'
+import BlogContainer from '../components/blogContainer'
+import BlogBody from '../components/BlogBody'
 
 const EssayPostPage = ({data}) => {
 
@@ -11,12 +15,19 @@ const EssayPostPage = ({data}) => {
     return (
         <div>
         <Seo title={essay.frontmatter.title}/>
+        <PageContainer>
+            <Nav/>
+            </PageContainer>
         <article>
-            <BlogTitle/>
-            <h1>{essay.frontmatter.title}</h1>
-            <p>Published in {essay.frontmatter.date}</p>
-            <p>{essay.frontmatter.read} read</p>
+            <BlogContainer>
+            <BlogTitle 
+            postTitle={essay.frontmatter.title} 
+            date={essay.frontmatter.date}
+            />
+            <BlogBody>
             <MDXRenderer>{essay.body}</MDXRenderer>
+            </BlogBody>
+            </BlogContainer>
         </article>
         </div>
     )

@@ -1,13 +1,11 @@
 import * as React from 'react'
 
-const blogContainer = () => {
+const BlogContainer = ({children}) => {
     return (
-        <main>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-
-            </div>
+        <main className='max-w-prose py-16 px-7 mx-auto'>
+            {children}
         </main>
     )
 }
 
-export default blogContainer
+export default BlogContainer

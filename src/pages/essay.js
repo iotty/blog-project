@@ -10,7 +10,7 @@ import FooterSection from '../components/footer'
 const EssayPage = ({data}) => {
     const essays = data.allMdx.nodes
     return (
-        <div className='p-2 bg-white'>
+        <div>
             <Seo title='Essay' />
             <PageContainer>
 
