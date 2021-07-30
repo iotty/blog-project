@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-const EssayCard = ({title, date, link = '/essay'}) => {
+const EssayCard = ({title, date, link}) => {
     return (
-        <div className='mr-4 mb-4 sm:max-w-xs'>
+        <div className='mr-4 mb-4 w-full md:w-80 sm:max-w-xs'>
             <arcticle className=''>
-                <Link to={link}>
-                <div className='bg-white m-4 px-6 py-8 mx-auto border shadow-sm rounded-md flex flex-col hover:shadow-md hover:border-0 hover:border-t-4 hover:border-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105'>
+                <Link to={link} key={link}>
+                <div className='bg-white m-4 px-6 py-8 mx-auto border shadow-sm rounded-md flex flex-col hover:shadow-md hover:border-0 hover:border-t-4 hover:border-yellow-500 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105'>
                     <div>
                         <h3 className='text-xl font-bold text-gray-700 leading-normal'>{title}</h3>
                     </div>

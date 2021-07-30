@@ -26,6 +26,7 @@ const EssayPage = ({data}) => {
               <EssayCard
               title={post.frontmatter.title}
               date={post.frontmatter.date}
+              link={post.slug}
               />
             )
         })}

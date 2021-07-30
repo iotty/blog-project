@@ -1,13 +1,13 @@
 import * as React from 'react'
 import {graphql} from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
-import BlogTitle from '../components/blogTitle'
-import Seo from '../components/seo'
-import PageContainer from '../components/pageContainer'
-import Nav from '../components/nav'
-import BlogContainer from '../components/blogContainer'
-import BlogBody from '../components/BlogBody'
-import Footer from '../components/footer'
+import BlogTitle from '../../components/blogTitle'
+import Seo from '../../components/seo'
+import PageContainer from '../../components/pageContainer'
+import Nav from '../../components/nav'
+import BlogContainer from '../../components/blogContainer'
+import BlogBody from '../../components/BlogBody'
+import Footer from '../../components/footer'
 
 const EssayPostPage = ({data}) => {
 

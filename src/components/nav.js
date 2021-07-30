@@ -1,15 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { Popover } from '@headlessui/react'
-import Logo from '../images/icon.png'
+
 
 const NavBar = () => {
     return (
         <header>
             <nav className='mt-12 sm:flex sm:justify-between'>
                 <div className='flex items-center justify-between'>
-                    <div>
-                        <Link to='/'><img className='w-8 h-8' src={Logo} alt='Logo'></img></Link>
+                    <div className='text-gray-400 hover:text-gray-700 transition duration-700 ease-in-out'>
+                        <Link to='/'>
+                        <svg className='h-8 w-8' viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H4H9C12.866 0 16 3.13401 16 7C16 10.343 13.6566 13.1386 10.5229 13.8339L15.2376 22H10.6188L6 14H4V22H0V0ZM12 7C12 8.65685 10.6569 10 9 10H4V4H9C10.6569 4 12 5.34315 12 7Z" fill="currentColor"/>
+                        </svg>
+                        </Link>
                     </div>
                     <div className='sm:hidden'>
                         <Popover className='relative'>
