@@ -19,15 +19,17 @@ const EssayPage = ({data}) => {
             titlePage='Essay'
             description='Add some description that will wrap for test purpose.'
             />
-            <EssayCard/>
+        
+        <div className='flex flex-wrap justify-center sm:justify-start'>
         {essays.map((post) => {
           return (
-            <div>
-                <h2>{post.frontmatter.title}</h2>
-                <h2>{post.frontmatter.date}</h2>
-            </div>
+              <EssayCard
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
+              />
             )
         })}
+            </div>
         <FooterSection/>
         </PageContainer>
         </div>
