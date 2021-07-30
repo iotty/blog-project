@@ -10,7 +10,7 @@ import PageContainer from "../components/pageContainer"
 const IndexPage = () => {
   return (
     <div>
-    <Seo title='Homepage' />
+    <Seo title='Home' />
     <PageContainer>
     <Nav/>
       <HeroHome

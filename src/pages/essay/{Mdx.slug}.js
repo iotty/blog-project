@@ -2,7 +2,7 @@ import * as React from 'react'
 import {graphql} from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import BlogTitle from '../../components/blogTitle'
-import Seo from '../../components/seo'
+import SeoBlog from '../../components/SeoBlog'
 import PageContainer from '../../components/pageContainer'
 import Nav from '../../components/nav'
 import BlogContainer from '../../components/blogContainer'
@@ -15,7 +15,7 @@ const EssayPostPage = ({data}) => {
 
     return (
         <div>
-        <Seo title={essay.frontmatter.title}/>
+        <SeoBlog title={essay.frontmatter.title}/>
         <PageContainer>
             <Nav/>
             </PageContainer>

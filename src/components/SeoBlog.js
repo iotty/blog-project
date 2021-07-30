@@ -2,7 +2,7 @@ import * as React from 'react'
 import {Helmet} from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const SeoPage = ({title, description, meta = []}) => {
+const SeoBlog = ({title, description, meta = []}) => {
     const data = useStaticQuery(graphql`
     query{
       site {
@@ -20,7 +20,7 @@ const SeoPage = ({title, description, meta = []}) => {
         <Helmet
         title={title}
         htmlAttributes={{lang: `id`}}
-        titleTemplate={`%s — ${data.site.siteMetadata.title}`}
+        titleTemplate={`%s by ${data.site.siteMetadata.title}`}
         meta={[
             {
                 name: `description`,
@@ -59,4 +59,4 @@ const SeoPage = ({title, description, meta = []}) => {
     )
 }
 
-export default SeoPage
+export default SeoBlog
