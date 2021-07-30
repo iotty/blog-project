@@ -7,6 +7,7 @@ import PageContainer from '../components/pageContainer'
 import Nav from '../components/nav'
 import BlogContainer from '../components/blogContainer'
 import BlogBody from '../components/BlogBody'
+import Footer from '../components/footer'
 
 const EssayPostPage = ({data}) => {
 
@@ -29,6 +30,10 @@ const EssayPostPage = ({data}) => {
             </BlogBody>
             </BlogContainer>
         </article>
+        <PageContainer>
+
+        <Footer/>
+        </PageContainer>
         </div>
     )
 }
