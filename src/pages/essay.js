@@ -17,7 +17,7 @@ const EssayPage = ({data}) => {
             <Nav/>
             <PageTitleComponent
             titlePage='Essay'
-            description='Add some description that will wrap for test purpose.'
+            description='A highly opinionated story and shared though on design, logistics, and more. Bear with me.'
             />
         
         <div className='flex flex-wrap justify-center sm:justify-start'>
