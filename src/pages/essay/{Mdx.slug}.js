@@ -9,6 +9,7 @@ import BlogContainer from '../../components/blogContainer'
 import BlogBody from '../../components/BlogBody'
 import Footer from '../../components/footer'
 
+
 const EssayPostPage = ({data}) => {
 
     const essay = data.mdx

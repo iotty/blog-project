@@ -20,7 +20,7 @@ const SeoBlog = ({title, description, meta = []}) => {
         <Helmet
         title={title}
         htmlAttributes={{lang: `id`}}
-        titleTemplate={`%s by ${data.site.siteMetadata.title}`}
+        titleTemplate={`%s — ${data.site.siteMetadata.title}`}
         meta={[
             {
                 name: `description`,
