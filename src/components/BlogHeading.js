@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const BlogHeading= ({children}) => {
     return (
-        <div className='font-black text-4xl leading-normal'>
+        <div className='font-black text-3xl leading-normal'>
             {children}
         </div>
         
