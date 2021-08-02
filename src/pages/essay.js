@@ -27,6 +27,7 @@ const EssayPage = ({data}) => {
               title={post.frontmatter.title}
               date={post.frontmatter.date}
               link={post.slug}
+              category={post.frontmatter.category}
               />
             )
         })}
@@ -44,6 +45,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM D, YYYY")
         title
+        category
       }
       slug
     }
