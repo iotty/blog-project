@@ -27,7 +27,7 @@ const EssayPage = ({data}) => {
               title={post.frontmatter.title}
               date={post.frontmatter.date}
               link={post.slug}
-              category={post.frontmatter.category}
+              category={post.frontmatter.tag}
               />
             )
         })}
@@ -40,12 +40,16 @@ const EssayPage = ({data}) => {
 
 export const pageQuery = graphql`
 {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(
+      sort: {fields: frontmatter___date, order: DESC} 
+      filter: {frontmatter: {category: {eq: "Essay"}}}
+      )
+      {
     nodes {
       frontmatter {
         date(formatString: "MMMM D, YYYY")
         title
-        category
+        tag
       }
       slug
     }

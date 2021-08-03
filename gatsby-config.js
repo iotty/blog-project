@@ -14,6 +14,13 @@ module.exports = {
         name: `essay`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/illustration`,
+        name: `illustration`,
+      },
+    },
     `gatsby-plugin-mdx`,
     `gatsby-plugin-postcss`,
     {
@@ -28,5 +35,8 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
   }

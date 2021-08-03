@@ -13,7 +13,7 @@ const IllustrationPage = () => {
         <Nav/>
         <PageTitleComponent
         titlePage='Book'
-        description='Add some description that will wrap for test purpose.'
+        description='This will be my book that i have read, in read, or still in my bucket list'
         />
         <FooterSection/>
         </PageContainer>

@@ -4,6 +4,7 @@ import Nav from '../components/nav'
 import PageTitleComponent from '../components/pageTitle'
 import PageContainer from '../components/pageContainer'
 import FooterSection from '../components/footer'
+import PosterImage from '../components/PosterImage'
 
 const IllustrationPage = () => {
     return (
@@ -13,8 +14,9 @@ const IllustrationPage = () => {
         <Nav/>
         <PageTitleComponent
             titlePage='Illustration'
-            description='Add some description that will wrap for test purpose.'
+            description='This will be my showcase to the design that I made, sometimes for fun, for college project, etc.'
             />
+            <PosterImage/>
         <FooterSection/>
         </PageContainer>
         </div>
